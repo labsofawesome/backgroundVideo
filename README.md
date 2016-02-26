@@ -1,4 +1,4 @@
-backgroundVideo - v0.2.4
+backgroundVideo - v0.2.5
 ============
 ## About
 ### What is backgroundVideo?
@@ -87,7 +87,7 @@ preventContextMenu | boolean | false | Prevents the user from viewing the contex
 parallax | boolean | true | Toggle's parallax video feature
 parallaxOptions: { effect: 1.5 } | number | 1.5 | The intensity of the parallax effect (1: fixed). Number must be >= 1.
 pauseVideoOnViewLoss | boolean | true | Pause the video when the user scrolls out of view
-
+initCallback | function | null | Callback called when the video has finished resizing
 
 ## Dependencies
 
