@@ -24,7 +24,8 @@
             parallaxOptions: {
                 effect: 1.5
             },
-            pauseVideoOnViewLoss: false
+            pauseVideoOnViewLoss: false,
+            initCallback: null
         };
 
     // The actual plugin constructor
@@ -85,6 +86,11 @@
             // Prevent context menu on right click for object
             if(this.options.preventContextMenu) {
                 this.options.$video.on('contextmenu', function() { return false; });
+            }
+            
+            if (this.options.initCallback != null)
+            {
+                this.options.initCallback();
             }
 
             me.update();
